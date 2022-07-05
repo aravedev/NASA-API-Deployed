@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <title>NASA API</title>
+  </head>
+
+  <body>
+    <!--Navbar-->
+
+    <div class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">NASA-API</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#intro"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pod">Picture Of Day</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Navbar-->
+    <section id="intro">
+      <section class="container my-5 justify-content">
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-5">
+            <div class="card p-5 border-0">
+              <div class="card-body text-center">
+                <h4 class="card-title display-4 fw-bold text-md-start">
+                  NASA API
+                </h4>
+                <p class="lead card-subtitle text-md-start">
+                  Get access to different pictures directly from NASA
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Col 2-->
+          <div class="col-lg-5 justify-content-center">
+            <img
+              src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="https://unsplash.com/es/fotos/oMpAz-DN-9I?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="my-5 border bg-light" id="pod">
+      <section class="container">
+        <div class="row my-5 justify-content-center">
+          <div class="col col-lg-4">
+            <h2>Picture Of the Day</h2>
+            <form action="">
+              <label for="date" class="form-label lead fw-bold"
+                >Try a different date</label
+              >
+              <input type="date" class="form-control" id="date1" />
+            </form>
+            <div class="d-grid gap-2 col-5">
+              <button
+                class="btn btn-outline-primary btn-md my-3"
+                type="submit"
+                id="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="my-5">
+      <section class="container justify-content-around">
+        <div class="row my-5 justify-content-center align-items-center gap-3">
+          <div class="col-lg-5">
+            <img src="" alt="" class="img-fluid shadow-lg" id="pic" />
+          </div>
+          <div class="col-lg-5 justify-content-center" id="info">
+            <h3 class="" id="title-info"></h3>
+            <p id="explanation-info"></p>
+            <p id="copyRight"></p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/nasaApi.js"></script>
+  </body>
+</html>
